@@ -14,11 +14,12 @@ int line(string a)
 	int pos = 0;
 	string out;
 	ifstream FileSearch("test.txt");
+	// searches for the pharse in a file
 	while (!FileSearch.eof())
 	{
 		getline(FileSearch, out);
 		if (out.find(a) != string::npos) {
-			cout << a << " found on line: " << searchLine << "\n\n";
+			cout << a << " found on line: " << searchLine << "\n\n"; //printed if phrase is found
 			break;
 		}
 		searchLine++;
@@ -44,7 +45,6 @@ void editor(int b, string line)
 			cout << replace << "\n";
 			replace = "Colour: " + line;
 			cout << "hi";
-			break;
 		}
 		replace += "\n";
 		newfile << replace;
