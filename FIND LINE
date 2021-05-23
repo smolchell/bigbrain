@@ -1,0 +1,46 @@
+int line(string a)
+{
+
+	int searchLine = 0;
+	int counter = 0;
+	int pos = 0;
+	string out;
+	bool found = false;
+	ifstream FileSearch("test.txt");
+	// searches for the pharse in a file
+	a = "ID: " + a;
+
+	while (found == false)
+	{
+		while (!FileSearch.eof())
+		{
+			getline(FileSearch, out);
+			if (out.find(a) != string::npos) {
+				//cout << a << " found on line: " << searchLine << "\n\n"; //printed if phrase is found
+				found = true;
+				break;
+			}
+			searchLine++;
+		}
+		if (found == true)
+		{
+			break;
+		}
+		else
+		{
+			cin.clear();
+			cin.ignore();
+			cout << "ID not found. Please enter a valid ID. " << endl;
+			cin >> a;
+			cout << a;
+			a = "ID: " + a;
+			FileSearch.clear();
+			FileSearch.seekg(0);
+			searchLine = 0;
+		}
+	}
+	
+	FileSearch.close();
+
+	return searchLine;
+}
