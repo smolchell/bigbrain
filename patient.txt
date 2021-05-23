@@ -1,0 +1,71 @@
+ID: 1
+Name: Fred
+Surname: Gary
+DOB: 12/12/20
+Overseas Travel: no
+Symptoms: Loss off sense of taste or smell, Loss of speech and movement, Chest pain and pressure, 
+High Risk Locations: Auburn Train Station, 
+Reccomdation: Test Required. 
+Covid Test Result: Pending
+Recovery Satus: N/A 
+Living Status: Alive
+
+ID: 2
+Name: Gary
+Surname: Mars
+DOB: 13/06/20
+Overseas Travel: yes
+Symptoms: Dry Cough, 
+High Risk Locations: No high risk locations visited
+Reccomdation: Isolation Required.
+Covid Test Result: N/A
+Recovery Satus: N/A 
+Living Status: Alive
+
+ID: 3
+Name: Patrica
+Surname: May
+DOB: 19/5/1993
+Overseas Travel: no
+Symptoms: Chest pain and pressure, 
+High Risk Locations: Pact Retail Accessories, 
+Reccomdation: Test Required. 
+Covid Test Result: Pending
+Recovery Satus: N/A 
+Living Status: Alive
+
+ID: 4
+Name: HArry
+Surname: Wed
+DOB: 6/6/1992
+Overseas Travel: no
+Symptoms: Chest pain and pressure, Sore Throat, Loss off sense of taste or smell, 
+High Risk Locations: Curry Vault Indian Restaurant & Bar, Royal Hospital, Pact Retail Accessories, 
+Reccomdation: Test Required. 
+Covid Test Result: Pending
+Recovery Satus: N/A 
+Living Status: Alive
+
+ID: 5
+Name: Chad
+Surname: Stocking
+DOB: 4/3/1999
+Overseas Travel: yes
+Symptoms: Sore Throat, Chest pain and pressure, Loss off sense of taste or smell, 
+High Risk Locations: No high risk locations visited
+Reccomdation: Test Required. 
+Covid Test Result: Pending
+Recovery Satus: N/A 
+Living Status: Alive
+
+ID: 6
+Name: Jimmy
+Surname: Do
+DOB: 12/6/98
+Overseas Travel: no
+Symptoms: Loss off sense of taste or smell, Loss of speech and movement, Diarrhoea, 
+High Risk Locations: No high risk locations visited
+Reccomdation: Test Required. 
+Covid Test Result: Pending
+Recovery Satus: N/A 
+Living Status: Alive 
