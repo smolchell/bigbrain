@@ -1,0 +1,135 @@
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <string>
+#include <stdio.h>
+
+using namespace std;
+
+int line(int a)
+{
+
+	int searchLine = 0;
+	int counter = 0;
+	int pos = 0;
+	string out;
+	ifstream FileSearch("test.txt");
+	// searches for the pharse in a file
+	while (!FileSearch.eof())
+	{
+		getline(FileSearch, out);
+		if (out.find(a) != string::npos) {
+			//cout << a << " found on line: " << searchLine << "\n\n"; //printed if phrase is found
+			break;
+		}
+		searchLine++;
+	}
+	FileSearch.close();
+
+	return searchLine;
+}
+
+void editor()
+{
+	int ID;
+	cout << "Enter the ID of the Patient you would like to edit: " << endl;
+	cin >> ID;
+
+	int b = line(ID);
+
+
+	ifstream oldfile;
+	oldfile.open("test.txt");
+	ofstream newfile;
+	newfile.open("temp.txt");
+	string replace;
+	int counter = 0;
+	char option = '5';
+	string line;
+
+	while (option != '4') {
+		cout << "Select the item you would like to edit by entering a number.\nEnter 4 to exit the edit menu and return to main menu.";
+		cout << "1. International Travel status";
+		cout << "2. Covid Recovery Status";
+		cout << "3. Patient Living Status";
+		cout << "4. Return to main menu";
+		cin >> option;
+
+
+
+		if (option = 1)
+		{
+			cout << "Have you recently been overseas, yes or no?";
+			b = b + 4;
+			cin >> line;
+			line = " " + line;
+		}
+		else if (option = 2)
+		{
+			cout << "Are you recovering or recovered from covid?";
+			b = b + 8;
+			cin >> line;
+		}
+		else if (option = 3)
+		{
+			cout << "Is the covid paitent dead or alive";
+			b = b + 9;
+			cin >> line;
+		}
+
+		while (!oldfile.eof())
+		{
+			getline(oldfile, replace);
+			if (counter == b)
+			{
+				cout << replace << "\n";
+				replace = line;
+				cout << "hi";
+			}
+			replace += "\n";
+			newfile << replace;
+			counter++;
+		}
+		oldfile.close();
+		newfile.close();
+
+		remove("test.txt");
+		rename("temp.txt", "test.txt");
+	}
+}
+
+void create()
+{
+	ofstream my_file;
+	my_file.open("test.txt");
+	if (!my_file)
+	{
+		cout << "File not created!";
+	}
+	else
+	{
+		cout << "File created successfully!" << endl;
+		my_file << "Tester file\n\n";
+		my_file << "Name: charles r\nAge:27\nColour: Red\n\nName: Tiffany c\nAge:43\nColour:blue";
+
+		my_file.close();
+	}
+}
+
+int main()
+{
+	string a;
+	string c;
+	cout << "what do you want to search for: " << endl;
+	cin >> a;
+
+	create();
+	//getLine(a);
+	int b = line(a);
+
+	cout << "what word do you want to replace with: " << endl;
+	cin >> c;
+
+	editor(b);
+
+}
