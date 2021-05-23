@@ -69,3 +69,51 @@ Reccomdation: Test Required.
 Covid Test Result: Pending
 Recovery Satus: N/A 
 Living Status: Alive 
+
+ID: 7
+Name: Karl
+Surname: Karlson
+DOB: 31/7/89
+Overseas Travel: yes
+Symptoms: No symptoms
+High Risk Locations: No high risk locations visited
+ Reccomdation: Test Required. 
+ Covid Test Result: Pending
+Recovery Satus: N/A
+Living Status: Alive
+
+ID: 8
+Name: Lae
+Surname: Ge
+DOB: 9/4/02
+Overseas Travel: yes
+Symptoms: No symptoms
+High Risk Locations: No high risk locations visited
+ Reccomdation: Isolation Required. 
+ Covid Test Result: N/A
+Recovery Satus: N/A
+Living Status: Alive
+
+ID: 10
+Name: JIm
+Surname: Son
+DOB: 5/6/78
+Overseas Travel: yes
+Symptoms: No symptoms
+High Risk Locations: No high risk locations visited
+ Reccomdation: Isolation Required. 
+ Covid Test Result: N/A
+Recovery Satus: N/A
+Living Status: Alive
+
+ID: 22
+Name: kim
+Surname: soo
+DOB: 6/7/99
+Overseas Travel: yes
+Symptoms: Tiredness, Fever, 
+High Risk Locations: No high risk locations visited
+Reccomdation: Test Required. 
+Covid Test Result: Pending
+Recovery Satus: N/A
+Living Status: Alive
